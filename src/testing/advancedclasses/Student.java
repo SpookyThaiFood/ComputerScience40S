@@ -45,6 +45,6 @@ public class Student extends Person {
     }
     
     public Student clone() {
-        return new Student(studentNumber, this.getName(), this.getAge(), this.isMale);
+        return new Student(studentNumber, getName(), getAge(), isMale);
     }
 }

@@ -39,6 +39,21 @@ public class AdvancedClassesTest {
         } else {
             System.out.println("false");
         }
+        
+        Student jeff = new Student(21, "Jeff Moore", 21, true);
+        Student jenko = new Student(22, "Jenko Jones", 22, true);
+        
+        System.out.println(jeff.toString());
+        System.out.println(jenko.toString());
+        
+        Student bob = jeff.clone();
+        
+        System.out.println(bob.toString());
+        
+        if (jeff.equals(bob)) System.out.println("Jeff = bob");
+        if (!jeff.equals(jenko)) System.out.println("Jeff != jenko");
+        
+        
 
         System.out.println("Advanced classes unit complete");
     }
