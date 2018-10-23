@@ -38,12 +38,14 @@ public class Student extends Person {
         return studentNumber;
     }
     
+    @Override
     public boolean equals(Object object) {
         Student student = (Student)object;
         if (this.studentNumber != student.getStudentNumber()) return false;
         return super.equals(student);
     }
     
+    @Override
     public Student clone() {
         return new Student(studentNumber, getName(), getAge(), isMale);
     }
