@@ -56,6 +56,66 @@ public class AdvancedClassesTest {
         
 
         System.out.println("Advanced classes unit complete");
+        
+        
+//        Teacher wachs = new Teacher("Mr. Wachs");
+//        wachs.addStudent(greg);
+//        wachs.addStudent(jenko);
+//        wachs.addStudent(jeff);
+//        wachs.addStudent(bob);
+//        wachs.addStudent(rodrick);
+//        System.out.println(wachs.toString());
+        System.out.println("end");
+        
+        checkStatus(person);
+        System.out.println("\n");
+        checkStatus(greg);
+        System.out.println("\n");
+        checkStatus(object1);
+//        System.out.println("\n");
+//        checkStatus(wachs);
+        System.out.println("\n");
+        
+        char[] waord = { 'w', 'a', 'o', 'r', 'd' };
+        
+        String string = new String(waord);
+        checkStatus(waord);
+        
+        System.out.println(Student.totalStudents);
+        Person.endOfTheWorld();
+        
+        Phantom danny = new Phantom("Danny Phantom", 14, true);
+        
+        Poltergeist geist = new Poltergeist("Geist Fierry", 50, true);
+        
+        Haunted haunted = new Haunted();
+        
+        Husky havoc = new Husky(2550, "Havoc", 11, true);
+        Wachs wachs = new Wachs("Wachs");
+        
+        System.out.println(geist.toString());
+        
+        Meeting meeting = new Meeting();
+        
+        meeting.attend(geist);
+        meeting.attend(wachs);
+        meeting.attend(danny);
+        
+        meeting.hold();
+    }
+    
+    private void checkStatus(Object object) {
+        
+        if (object instanceof Student) System.out.println("Have a student");
+        
+        else if (object instanceof Teacher) System.out.println("Have a teacher");
+        
+        else if (object instanceof Person) System.out.println("Have a person");
+        
+        else if (object instanceof String) System.out.println("Have a string");
+        
+        else System.out.println("Fucking kiwis dude.. Like.. What the fuck?");
+        
     }
 
 }

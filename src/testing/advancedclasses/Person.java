@@ -71,5 +71,8 @@ public class Person {
         return age;
     }
     
+    public static void endOfTheWorld() {
+        System.out.println("People don't think it be like it is, but id do");
+    }
     
 }

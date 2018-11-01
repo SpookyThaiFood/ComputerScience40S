@@ -12,16 +12,19 @@ package testing.advancedclasses;
 public class Student extends Person {
     
     private int studentNumber;
+    public static int totalStudents;
     
     public Student(int studentNumber) {
         super();
         this.studentNumber = studentNumber;
         this.isMale = true;
+        totalStudents++;
     }
     
     public Student(int studentNumber, String name, int age, boolean isMale) {
         super(name, age, isMale);
         this.studentNumber = studentNumber;
+        totalStudents++;
     }
     
     @Override
