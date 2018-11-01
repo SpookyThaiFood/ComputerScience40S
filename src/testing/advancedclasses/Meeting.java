@@ -47,7 +47,18 @@ public class Meeting {
     }
     
     public void hold() {
+        
         System.out.println("Let's begin... Fkn kiwis! Am I right? There are " + Student.totalStudents + " students");
+        
+        // Enhanced for loop
+        for (Person member : members) {
+            if (member != null) {
+                member.talk();
+                if (member instanceof Wachs) {
+                    System.out.println("SHUT UP PEASANTS!!");
+                }
+            }
+        }
     }
 
 }
