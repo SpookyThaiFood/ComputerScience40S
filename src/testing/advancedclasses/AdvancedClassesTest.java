@@ -102,6 +102,10 @@ public class AdvancedClassesTest {
         meeting.attend(danny);
         
         meeting.hold();
+        
+        Icecream youscream = new Icecream();
+        
+        danny.consume(youscream);
     }
     
     private void checkStatus(Object object) {

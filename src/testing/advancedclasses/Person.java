@@ -75,4 +75,13 @@ public class Person {
         System.out.println("People don't think it be like it is, but id do");
     }
     
+    public void consume(Food food) {
+        if (food.shouldCook()) {
+            food.eat();
+        } else {
+            food.spoil();
+        }
+        
+    }
+    
 }

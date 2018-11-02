@@ -14,8 +14,8 @@ public abstract class Food {
     
     protected String group;
 
-    public Food() {
-        
+    public Food(String group) {
+        this.group = group;
     }
     
     @Override
@@ -39,6 +39,6 @@ public abstract class Food {
     
     public abstract void eat();
     
-    public abstract void shouldCook();
+    public abstract boolean shouldCook();
 
 }
